@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 import styled from "styled-components";
 import Container from "@atoms/container";
 import { media } from "@utils/media";
+import Button from "@atoms/button";
 
 const SectionHeader = () => {
   const data = useStaticQuery(graphql`
@@ -29,6 +30,7 @@ const SectionHeader = () => {
           goal is to provide free food to every member of the Wichita community,
           period.
         </p>
+        <Button href="https://cash.app/$ictfreefood">Donate</Button>
       </Content>
     </Header>
   );

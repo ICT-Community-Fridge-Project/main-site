@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Container from "@atoms/container";
+import { media } from "@utils/media";
 
 const GOOGLE_PLACES_API_KEY = "AIzaSyBrAHX3xbf9wx_C4dVqbZ4YQZIaZ-HUMF4";
 
@@ -18,7 +19,7 @@ const Maps = () => {
       {locations.map(({ name, mapUrl, websiteUrl }) => {
         return (
           <Figure key={mapUrl}>
-            <LocationMap style={{ border: 0 }} src={mapUrl} />
+            <LocationMap height="400" style={{ border: 0 }} src={mapUrl} />
             <FigureCaption>
               <a href={websiteUrl}>{name}</a>
             </FigureCaption>
@@ -33,7 +34,7 @@ const SectionLocation = () => {
   return (
     <LocationsContainer content="true" contentTop>
       <section id="locations">
-        <h1>Locations</h1>
+        <LocationsHeader>Locations</LocationsHeader>
         <Maps />
       </section>
     </LocationsContainer>
@@ -51,12 +52,20 @@ const LocationsContainer = styled(Container)`
   text-align: center;
 
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 `;
 
+const LocationsHeader = styled.h1`
+  margin-bottom: 2rem;
+`;
+
 const LocationMap = styled.iframe`
-  width: '100%
+  width: 30vw;
+
+  @media ${media.xs} {
+    width: 80vw;
+  }
 `;
 
 const FigureCaption = styled.figcaption``;
