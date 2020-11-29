@@ -26,7 +26,7 @@ const Navigation = () => {
             </TextLink>
           </li>
           <li>
-            <Button href="">Donate</Button>
+            <Button href="https://cash.app/$ictfreefood">Donate</Button>
           </li>
         </Links>
       </NavContainer>

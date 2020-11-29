@@ -19,7 +19,7 @@ const Maps = () => {
       {locations.map(({ name, mapUrl, websiteUrl }) => {
         return (
           <Figure key={mapUrl}>
-            <LocationMap height="400" style={{ border: 0 }} src={mapUrl} />
+            <LocationMap style={{ border: 0 }} src={mapUrl} />
             <FigureCaption>
               <a href={websiteUrl}>{name}</a>
             </FigureCaption>
@@ -61,9 +61,11 @@ const LocationsHeader = styled.h1`
 `;
 
 const LocationMap = styled.iframe`
-  width: 30vw;
+  width: 50vw;
+  height: 800px;
 
   @media ${media.xs} {
+    height: 500px;
     width: 80vw;
   }
 `;
