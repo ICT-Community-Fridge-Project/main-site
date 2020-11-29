@@ -8,7 +8,7 @@ import SectionLocations from "@molecules/sectionLocations";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="ICT Community Fridge Project" />
     <SectionHeader />
     <SectionFAQ />
     <SectionLocations id="locations" />
