@@ -7,7 +7,19 @@ const Footer = () => (
   <FooterContainer content="true">
     <Links>
       <li>
-        <TextLink href="gatsby.org">Contact Us</TextLink>
+        <TextLink href="mailto:ictfreefood@gmail.com">Contact Us</TextLink>
+      </li>
+    </Links>
+    <Links>
+      <li>
+        <TextLink href="https://www.facebook.com/ICTfridgefood/">
+          Faceboook
+        </TextLink>
+      </li>
+      <li>
+        <TextLink href="https://www.instagram.com/ictcommunityfridge">
+          Instagram
+        </TextLink>
       </li>
     </Links>
   </FooterContainer>
