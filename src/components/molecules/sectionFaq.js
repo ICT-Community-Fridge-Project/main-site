@@ -10,15 +10,15 @@ const SectionFAQ = () => {
       <Questions>
         <FaqQuestion
           question="What is the ICT Community Fridge Project?"
-          answer="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
+          answer="The ICT Community Fridge Project aims to provide free access to nutritious food in 67214 and beyond. The fridge gives access to much needed produce such as fruits, vegetables, eggs, milk products, lunch meats, and bread for families and individuals in Wichita."
         />
         <FaqQuestion
           question="Who can take advantage of the program?"
-          answer=" Vivamus ut fringilla enim. Quisque vel justo ut augue volutpat ultricies non ut nulla. Maecenas sagittis ipsum non rhoncus pulvinar. Phasellus tristique pharetra nisi sollicitudin cursus."
+          answer="Everyone. Everyone eats. No IDs, no tax papers, take whatever you need. This fridge is for students, families, individuals, regardless of income. Take an apple for a snack, or come get free groceries. The fridge is for us, by us."
         />
         <FaqQuestion
           question="How can I help?"
-          answer="Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam pellentesque orci odio, et tristique mauris bibendum et. Aliquam tempor diam eros, at tincidunt mi vulputate ac."
+          answer="You can donate to our cashapp, $ictfreefood. You can donate food, drink, and resources directly to our locations. You can spread the word about the fridge, tell your coworkers, friends, and family."
         />
       </Questions>
     </FaqContainer>

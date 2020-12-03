@@ -3,29 +3,33 @@ import styled from "styled-components";
 import Container from "@atoms/container";
 import { media } from "@utils/media";
 
-const GOOGLE_PLACES_API_KEY = "AIzaSyBrAHX3xbf9wx_C4dVqbZ4YQZIaZ-HUMF4";
-
-const locations = [
-  {
-    name: "Dead Center Vintage",
-    mapUrl: `https://www.google.com/maps/embed/v1/search?q=Dead%20Center%20Vintage%2C%20East%20Douglas%20Avenue%2C%20Wichita%2C%20KS%2C%20USA&key=${GOOGLE_PLACES_API_KEY}`,
-    websiteUrl: "https://www.deadcentervintage.com/",
-  },
-];
-
 const Maps = () => {
   return (
     <>
-      {locations.map(({ name, mapUrl, websiteUrl }) => {
-        return (
-          <Figure key={mapUrl}>
-            <LocationMap style={{ border: 0 }} src={mapUrl} />
-            <FigureCaption>
-              <a href={websiteUrl}>{name}</a>
-            </FigureCaption>
-          </Figure>
-        );
-      })}
+      <Figure>
+        <FigureCaption>
+          <a href="https://www.deadcentervintage.com/">Dead Center Vintage</a>
+        </FigureCaption>
+        <LocationMap
+          width="100%"
+          height="600"
+          frameBorder="0"
+          scrolling="no"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=626%20E%20Douglas%20Ave,%20Wichita,%20KS%2067202+(Dead%20Center%20Vintage)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        />
+      </Figure>
+      <Figure>
+        <FigureCaption>
+          <a href="https://www.facebook.com/CHDINC3/">CHD Boxing Club</a>
+        </FigureCaption>
+        <LocationMap
+          width="100%"
+          height="600"
+          frameBorder="0"
+          scrolling="no"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=2498-2400%20E%209th%20St%20N,%20Wichita,%20KS%2067214+(CHD%20Boxing%20Company)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        />
+      </Figure>
     </>
   );
 };
@@ -70,6 +74,8 @@ const LocationMap = styled.iframe`
   }
 `;
 
-const FigureCaption = styled.figcaption``;
+const FigureCaption = styled.figcaption`
+  margin-bottom: 2rem;
+`;
 
 const Figure = styled(Container)``;

@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="ICT Community Fridge Project" />
     <SectionHeader />
     <SectionFAQ />
-    <SectionLocations id="locations" />
+    <SectionLocations />
     <SectionCTA />
   </Layout>
 );
