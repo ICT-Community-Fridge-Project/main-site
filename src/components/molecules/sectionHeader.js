@@ -9,7 +9,7 @@ import Button from "@atoms/button";
 const SectionHeader = () => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
-      file(relativePath: { eq: "headerLogo.png" }) {
+      file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -50,6 +50,7 @@ const Header = styled(Container)`
 
 const Image = styled.div`
   width: 100%;
+  padding: 10%;
   height: 100%;
 
   .gatsby-image-wrapper {
