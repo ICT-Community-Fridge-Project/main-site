@@ -21,7 +21,12 @@ const SectionHeader = () => {
   return (
     <Header grid>
       <Image>
-        <Img fadeIn={false} fluid={data.file.childImageSharp.fluid} />
+        <Img
+          alt="Everybody eats, period."
+          durationFadeIn="false"
+          fadeIn={false}
+          fluid={data.file.childImageSharp.fluid}
+        />
       </Image>
       <Content>
         <h2>Everybody eats, period.</h2>
