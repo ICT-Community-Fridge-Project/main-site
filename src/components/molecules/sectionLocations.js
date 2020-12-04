@@ -27,7 +27,7 @@ const Maps = () => {
           height="600"
           frameBorder="0"
           scrolling="no"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=2498-2400%20E%209th%20St%20N,%20Wichita,%20KS%2067214+(CHD%20Boxing%20Company)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=2505%20E%209th%20St%20N,%20Wichita,%20KS%2067214+(CHD%20Boxing%20Company)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         />
       </Figure>
     </>
