@@ -12,13 +12,11 @@ const Footer = () => (
     </Links>
     <Links>
       <li>
-        <TextLink href="https://www.facebook.com/ICTfridgefood/">
-          Faceboook
-        </TextLink>
+        <TextLink href="https://www.facebook.com/ICTfridgefood/">FB</TextLink>
       </li>
       <li>
         <TextLink href="https://www.instagram.com/ictcommunityfridge">
-          Instagram
+          IG
         </TextLink>
       </li>
     </Links>
